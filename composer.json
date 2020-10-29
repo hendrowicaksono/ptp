@@ -1,0 +1,22 @@
+{
+    "name": "hendrowicaksono/tajukonline-parser",
+    "description": "A simple parser for services in https://tajukonline.perpusnas.go.id",
+    "type": "library",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Hendro Wicaksono",
+            "email": "hendro.wicaksono@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {"hendrowicaksono\\TajukOnline\\": "src/"}
+    },
+    "require": {
+        "symfony/dom-crawler": "^5.1",
+        "symfony/css-selector": "^5.1",
+        "guzzlehttp/guzzle": "^7.1",
+        "mikecao/flight": "^1.3"
+    }
+}

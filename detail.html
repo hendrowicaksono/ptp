@@ -1,0 +1,227 @@
+
+
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8" /><title>
+	
+        TAJUK ONLINE
+    
+</title><link rel="shortcut icon" href="assets/img/favicon.ico" /><link rel="icon" type="image/gif" href="assets/img/favicon.gif" />
+
+    <!-- BEGIN STYLE CODES -->
+    <link href="assets/css/twitter-bootstrap/bootstrap.css" rel="stylesheet" /><link href="assets/css/social-jquery-ui-1.10.0.custom.css" rel="stylesheet" /><link href="assets/css/social.css" rel="stylesheet" /><link href="assets/css/social.plugins.css" rel="stylesheet" />
+    
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="assets/css/social-jquery.ui.1.10.0.ie.css" />
+    <![endif]-->
+    <!-- END STYLE CODES -->
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="assets/plugins/html5shiv.js"></script>
+    <![endif]-->
+    <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" /><link href="css/jquery-confirm.css" rel="stylesheet" type="text/css" /><link href="css/main.css" rel="stylesheet" type="text/css" /><link href="css/chosen.css" rel="stylesheet" type="text/css" /><link href="css/grid.css" rel="stylesheet" type="text/css" /><link href="css/button.css" rel="stylesheet" type="text/css" />
+    
+    <script src="js/jquery/jquery.1.8.2.min.js" type="text/javascript"></script>
+    <script src="js/jquery/jquery-ui-1.9.1.custom.min.js" type="text/javascript"></script>
+    <script src="js/jquery-confirm.js" type="text/javascript"></script>
+    <script src="js/idle-timer.js" type="text/javascript"></script>
+    <script src="js/Script.js" type="text/javascript"></script>
+
+    <style type="text/css">
+        @media screen and (max-width: 670px) {
+            #lbTajukOnlineMayor
+            {
+                font-size: 12px !important;   
+            }
+            #lbTajukOnlineMinor {
+                font-size: 10px !important;
+            }
+            #lbAplikasi
+            {
+                line-height: 12px;    
+            }
+        }
+    </style>
+</head>
+<body>
+<form method="post" action="AuthorityDetail.aspx?id=30459&amp;operand=1&amp;tajuk=4" id="form1" class="form-horizontal">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE1MzM0MzA2OTkPZBYCZg9kFgICAw9kFgJmDxYCHgdWaXNpYmxlaGRkNhoYGR2oNB5ySlLCm6f55aKyAPyREQyFxnXNabazoqQ=" />
+
+
+<script src="/ScriptResource.axd?d=emvoM8Rwg0Ph_cHhFnPFFT_vRlHtHoU3U2yLoMm-0GNqHGrGmsqA9V8_nA9WhE04-THbj8vsYX9GgFHvocmftfdf0VC0kF-lopL44xiBR-1YSbRsfV8iXyCXlcDMBi-S0&amp;t=ffffffffaa73f696" type="text/javascript"></script>
+    
+    <div id="header" style="border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #CCCCCC;">
+        <table style="width: 100%; height: 100%;">
+            <tr>
+                <td style="width: 50px; min-width: 50px; text-align: right; padding-right: 10px;">
+                    <img class="ImageLink" id="imgSearch" src="images/Search-icon.png" style="height: 53px; cursor: pointer;" onclick="window.open('Default.aspx', '_self');">
+                </td>
+                <td id="lbAplikasi">
+                    <span id="lbTajukOnlineMayor" class="Link" style="cursor: pointer; font-size: 20px;" onclick="window.open('Default.aspx', '_self');">TAJUK KENDALI PERPUSTAKAAN NASIONAL</span>
+                    <br />
+                    <span id="lbTajukOnlineMinor" style="font-size: 13px;">TAJUK ONLINE</span>
+                </td>
+                
+                <td style="width: 90px; min-width: 90px; text-align: right; padding-right: 40px;">
+                    <img class="ImageLink" id="imgLogoPerpus" style="cursor: pointer; height: 70px; margin-top: -6px;" src="images/LogoPerpusCenter.png" title="Perpustakaan Nasional RI" onclick="window.open('http://www.pnri.go.id', '_blank');">
+                </td>
+            </tr>
+        </table>
+        
+        <div class="MenuTop" style="font-size: 12px; padding-top: 1px; padding-left: 4px;">
+            <a href="Default.aspx">Beranda</a> - <a href="Panduan.aspx">Panduan</a> - <a href="FAQ.aspx">FAQ</a> - <a href="DataRiwayatPencarian.aspx">Riwayat Pencarian</a> - <a href="Visitor.aspx">Pengunjung</a> - <a href="SarankanTajuk.aspx">Sarankan Tajuk</a>
+        </div>
+    </div>
+    
+    <div>
+        
+    <div class="titlecontent" style="border-top-left-radius: 4px; border-top-right-radius: 4px;">Detail Tajuk</div>
+    <div class="ButtonArea" style="border: none;">
+        <button id="btBentuk" type="button" class="button-primary" onclick="LoadBentukLengkap();" style="margin-left: 0px;">
+            <span><i class="fa fa-file-text-o"></i>Bentuk Lengkap</span>
+        </button>
+        <button id="btMarcView" type="button" class="button-primary" onclick="LoadBentukMARC();">
+            <span><i class="fa fa-file-text-o"></i>Bentuk MARC</span>
+        </button>
+        <button id="btnCancel" type="button" class="button-success">
+            <span><i class="fa fa-sign-out"></i>Kembali ke Hasil Pencarian</span>
+        </button>
+    </div>
+
+<div id="formcontent" class="MainTable">
+
+ <div id="ContentPlaceHolder1_UpdatePanel1">
+	
+        <div id="ContentPlaceHolder1_UpdateProgress1" style="display:none;">
+		
+                <img id="ContentPlaceHolder1_Image1" src="images/loader.gif" alt="Proses..." />
+            
+	</div>
+        <br />
+        <table class="InputTable" cellpadding="0" cellspacing="0" border="0" 
+            style="width: 99%; background-color: #FFFFFF; margin-left: 4px;">
+            <tr>
+                <td valign="top">            
+                    <table style="width: 100%">
+                        <tr>
+                            <td style="vertical-align: top">
+                                <div id="TargetFrame">
+                                    &nbsp;
+                                </div>
+                            </td>
+                            <td style="vertical-align: top; width:18em;">
+                                <div id="right-navigation" class="right-navigation" style="padding: 8px; width:18em">
+                                    <h3>Unduh</h3>
+                                    <ul id="unduhlist" style="padding: 0px;list-style-type:none;">
+                                        <li style="padding:3px 3px 3px 12px;background:white;margin-bottom:3px;">
+                                            <a id="ExportMARC21" onclick="UnduhBentukMARC21();" style="cursor: pointer">Format MARC Unicode/UTF-8</a>
+                                        </li>
+                                        <li style="padding:3px 3px 3px 12px;background:white;margin-bottom:3px;">
+                                            <a id="ExportXMLMARCXML" onclick="UnduhBentukMARCXML();" style="cursor: pointer">Format MARC XML</a>
+                                        </li>
+                                        <li style="padding:3px 3px 3px 12px;background:white;margin-bottom:3px;">
+                                            <a id="ExportXMLMODS" onclick="UnduhBentukMODS();" style="cursor: pointer">Format MODs</a>
+                                        </li>
+                                        <li style="padding:3px 3px 3px 12px;background:white;margin-bottom:3px;">
+                                            <a id="ExportXMLDublinCoreRDF" onclick="UnduhBentukDublinCoreRDF();" style="cursor: pointer">Format Dublin Core</a>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                &nbsp;</td>
+                            <td>
+                                &nbsp;</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <br />
+    
+</div>
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+//    $(function () {
+//        $(document.ready)
+    //        {
+            
+            var ParamWindow = "keyword=" + "" + "&operand=" + "1" + "&tajuk=" + "4";
+            var ParentWindow = "DataAuthListSemuaRuas.aspx?" + ParamWindow;
+            $("#btnCancel").click(function () {
+                window.location = ParentWindow;
+                return false;
+            });
+
+            LoadBentukLengkap = function () {
+                LoadForm("AuthorityDetailLengkap.aspx", "TargetFrame", "id=" + "30459", null);
+            };
+
+            LoadBentukMARC = function () {
+                LoadForm("AuthorityDetailMARC.aspx", "TargetFrame", "id=" + "30459", null);
+            };
+
+            UnduhBentukMARC21 = function () {
+                window.open("AuthorityExport.aspx?id=" + "30459" + "&f=marc" + "&t=text&opt=marc21", "_blank");
+            }
+
+            UnduhBentukMARCXML = function () {
+                window.open("AuthorityExport.aspx?id=" + "30459" + "&f=marc" + "&t=xml&opt=marc21", "_blank");
+            }
+
+            UnduhBentukMODS = function () {
+                window.open("AuthorityExport.aspx?id=" + "30459" + "&f=marc" + "&t=xml&opt=mods", "_blank");
+            }
+
+            UnduhBentukDublinCoreRDF = function () {
+                window.open("AuthorityExport.aspx?id=" + "30459" + "&f=marc" + "&t=xml&opt=dublincore_rdf", "_blank");
+            }
+
+            UnduhBentukDublinCoreOAI = function () {
+                window.open("AuthorityExport.aspx?id=" + "30459" + "&f=marc" + "&t=xml&opt=dublincore_oai", "_blank");
+            }
+
+            UnduhBentukDublinCoreSRW = function () {
+                window.open("AuthorityExport.aspx?id=" + "30459" + "&f=marc" + "&t=xml&opt=dublincore_srw", "_blank");
+            }
+
+            LoadBentukLengkap();
+
+        //}
+    //});
+//]]>
+</script>
+
+    </div>
+
+    <div class="form-footer-copyright" style="position: fixed;">
+        <a href="Default.aspx">Beranda</a> - <a href="Panduan.aspx">Panduan</a> - <a href="FAQ.aspx">FAQ</a> - <a href="DataRiwayatPencarian.aspx">Riwayat Pencarian</a> - <a href="Visitor.aspx">Pengunjung</a> - <a href="Login.aspx">Pemutakhiran</a><small>. ©2017 TAJUK ONLINE - PERPUSTAKAAN NASIONAL RI. </small><span style="color: #0099CC;">Anda pengunjung ke <span  style="color: #24C9FF;">314.356</span> sejak 01-12-2017</span>
+    </div>
+
+    <script src="js/chosen/chosen.jquery.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        SetChoosenSelect = function () {
+            var config = {
+                '.chosen-select': { search_contains: true }
+            };
+            for (var selector in config) {
+                $(selector).chosen(config[selector]);
+            };
+        };
+        SetChoosenSelect();
+    </script>
+    <!-- BEGIN JAVASCRIPT CODES -->
+    <script type="text/javascript" src="assets/plugins/twitter-bootstrap/bootstrap.js"></script>
+    <script src="assets/js/app.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery.uipro/uipro.min.js" type="text/javascript"></script>
+    <script src="assets/js/extents.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery.slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+
+    </form>
+</body>
+</html>
